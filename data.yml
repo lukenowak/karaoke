@@ -1,0 +1,23 @@
+Pizzeria Latawiec:
+  url: https://www.facebook.com/pizzerialatawiec
+  Miasto: Będzin
+  Prowadzący: DjDuDi
+  Występowanie: sobota
+  Opis: nieregularnie - sprawdź u źródła
+Miasto:
+  url: https://www.facebook.com/restauracjamiasto/
+  Miasto: Bielsko-Biała
+  Cyklicznie:
+    Śr: "19:00"
+Pizzeria Zielona Dolina:
+  url: https://www.facebook.com/ZielonaDolinaPizzeria/
+  Miasto: Chorzów
+  Prowadzący: Monika
+  Cyklicznie:
+    Pt: "20:00"
+Club Starówka:
+  url: https://www.facebook.com/club.starowka
+  Miasto: Cieszyn
+  Prowadzący: Norman
+  Cyklicznie:
+    Czw: "20:00"

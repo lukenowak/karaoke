@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Karaoke na śląsku</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista karaoke na Śląsku</h1>
+        <table class="table table-stripped table-bordered table-sm table-hover">
+            <thead>
+                <tr>
+                    <th>Miasto</th>
+                    <th>Miejsce</th>
+                    <th>Prowadzący</th>
+                    <th>Pn</th>
+                    <th>Wt</th>
+                    <th>Śr</th>
+                    <th>Czw</th>
+                    <th>Pt</th>
+                    <th>Sb</th>
+                    <th>Nd</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for name, value_dict in data.items() %}
+                <tr>
+                    <td scope="row">{{ value_dict['Miasto'] }}</td>
+                    <td><a href="{{ value_dict['url'] }}">{{ name }}</a></td>
+                    <td>{{ value_dict.get('Prowadzący', '???') }}</td>
+                    {% if 'Cyklicznie' not in value_dict %}
+                    <td colspan="7" align="center">{{ value_dict['Występowanie'] }}<br>{{ value_dict['Opis'] }}</td>
+                    {% else %}
+		      {% for day in ['Pn', 'Wt', 'Śr', 'Czw', 'Pt', 'Sb', 'Nd'] %}
+		    <td align="center">{{ value_dict['Cyklicznie'].get(day, '')  }}</td>
+		      {% endfor %}
+                    {% endif %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <script src="bootstrap.min.js"></script>
+</body>
+</html>
