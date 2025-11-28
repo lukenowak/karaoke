@@ -1,0 +1,3 @@
+ - [ ] alternating rows
+ - [ ] better mobile version
+ - [ ] finish data.yml
