@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Karaoke na śląsku - tabelka</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+<style>
+.tableFixHead          { overflow: auto; height: 100px; }
+.tableFixHead thead th { position: sticky; top: 0; z-index: 1; }
+</style>
 </head>
 <body>
     <div class="container">
-        <h1>Lista karaoke na Śląsku</h1>
-        <table class="table table-stripped table-bordered table-sm table-hover">
+        <table class="table table-stripped table-bordered table-sm table-hover tableFixHead">
+            <caption style="caption-side: top; text-align: center; font-weight: bold;">Lista karaoke na Śląsku</caption>
             <thead>
                 <tr>
                     <th>Miasto</th>
@@ -40,20 +44,6 @@
                 </tr>
                 {% endfor %}
             </tbody>
-            <thead>
-                <tr>
-                    <th>Miasto</th>
-                    <th>Miejsce</th>
-                    <th>Prowadzący</th>
-                    <th>Pn</th>
-                    <th>Wt</th>
-                    <th>Śr</th>
-                    <th>Czw</th>
-                    <th>Pt</th>
-                    <th>Sb</th>
-                    <th>Nd</th>
-                </tr>
-            </thead>
         </table>
     <p><a href="https://karaoke.nowak.io/">Karaoke on śląsku - tabelka</a>
     <p><a href="http://facebook.com/karaokenaslasku/">Komentowanie na FB</a>
