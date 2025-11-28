@@ -21,3 +21,190 @@ Club Starówka:
   Prowadzący: Norman
   Cyklicznie:
     Czw: "20:00"
+MSiW Częstochowa:
+  url: https://www.facebook.com/ministerstwo.czestochowa
+  Miasto: Częstochowa
+  Cyklicznie:
+    Czw: "20:00"
+Comitywa:
+  url: https://www.facebook.com/p/Comityva-20-live-music-pub-D%C4%85browa-G%C3%B3rnicza-100063701464325/
+  Miasto: Dąbrowa Górnicza
+  Cyklicznie:
+    Wt: "20:00"
+    Pt: "21:00"
+    Sb: "21:00"
+MSiW Gliwice:
+  url: https://msiw.eu/lokal/gliwice/
+  Miasto: Gliwice
+  Prowadzący: SASport
+  Cyklicznie:
+    Pt: "19:00"
+    Nd: "19:00"
+Warka:
+  url: https://www.facebook.com/WarkaGliwice
+  Miasto: Gliwice
+  Prowadzący: Passion Karaoke
+  Cyklicznie:
+    Czw: "20:00"
+Dobry Zbeer:
+  url: https://www.facebook.com/DobryZbeer
+  Miasto: Gliwice
+  Cyklicznie:
+    Śr: "19:00"
+Before:
+  url: https://www.facebook.com/BeforeCoctailPubJaworzno
+  Miasto: Jaworzno
+  Prowadzący: Ojciec Chrzestny
+  Występowanie: weekend w sezonie letnim
+  Opis: nieregularnie - sprawdź u źródła
+MSiW Jastrzębie Zdrój:
+  url: https://www.facebook.com/ministerstwo.jastrzebie/
+  Miasto: Jastrzębie Zdrój
+  Występowanie: weekend
+  Opis: nieregularnie - sprawdź u źródła
+"Chicas & Gorillas":
+  url: https://www.facebook.com/profile.php?id=61567181424072
+  Miasto: Katowice
+  Prowadzący: SASport
+  Cyklicznie:
+    Czw: "20:00"
+Greenpoint Mariacka:
+  url: https://www.facebook.com/p/Greenpoint-Mariacka-100054673050119/
+  Miasto: Katowice
+  Prowadzący: DjDuDi
+  Cyklicznie:
+    Pn: "21:00"
+    Czw: "21:00"
+Magnum Cocktail Bar:
+  url: https://www.facebook.com/profile.php?id=100082988869719
+  Miasto: Katowice
+  Prowadzący: Ojciec Chrzestny
+  Cyklicznie:
+    Śr: "20:00"
+MSiW Mariacka:
+  url: https://www.facebook.com/ministerstwo.katowice
+  Miasto: Katowice
+  Prowadzący: Ojciec Chrzestny
+  Cyklicznie:
+    Wt: "20:00"
+Pijalnia Wódki i Piwa:
+  url: https://pwip.com.pl/katowice/
+  Miasto: Katowice
+  Prowadzący: SASport
+  Cyklicznie:
+    Śr: "20:00"
+Pub Niebo Katowice:
+  url: https://www.facebook.com/share/14xovKNmim/
+  Prowadzący: Passion Karaoke
+  Miasto: Katowice
+  Występowanie: weekend
+  Opis: nieregularnie - sprawdź u źródła
+Taki Taki:
+  url: https://www.facebook.com/takitakikatowice/
+  Miasto: Katowice
+  Cyklicznie:
+    Śr: "21:00"
+    Czw: "21:00"
+    Pt: "21:00"
+    Sb: "21:00"
+Gwarek:
+  url: https://www.facebook.com/restauracjagwarek2017
+  Miasto: Knurów
+  Występowanie: weekend
+  Opis: nieregularnie - sprawdź u źródła
+PUB kobiórska dartownia:
+  url: https://www.facebook.com/profile.php?id=61551348821776
+  Miasto: Kobiór
+  Cyklicznie:
+    Pt: "20:00"
+Stacja Miejska Racibórz:
+  url: https://www.facebook.com/stacjamiejskaraciborz
+  Miasto: Racibórz
+  Cyklicznie:
+    Czw: "20:00"
+Ambasada Na Madagaskarze:
+  url: https://www.facebook.com/people/Ambasada-Na-Madagaskarze/100057309826117
+  Miasto: Ruda Śląska
+  Cyklicznie:
+    Pt: "21:00"
+Pizzeria EKIPLA:
+  url: https://www.facebook.com/Ekiplarudaslaska/
+  Miasto: Ruda Śląska
+  Prowadzący: DJ Biggel
+  Cyklicznie:
+    Sb: "20:00"
+MSiW Sosnowiec:
+  url: https://facebook.com/ministerstwo.sosnowiec/
+  Miasto: Sosnowiec
+  Prowadzący: DjDuDi, Samba
+  Cyklicznie:
+    Wt: "20:00"
+Komin Music Cafe:
+  url: https://www.facebook.com/kominmusiccafe
+  Miasto: Sosnowiec
+  Prowadzący: Samba, inni
+  Występowanie: weekend
+  Opis: nieregularnie - sprawdź u źródła
+"Sjesta Restaurant & Cafe, Sosnowiec":
+  url: https://www.facebook.com/SjestaRestaurantAndCafeSosnowiec
+  Miasto: Sosnowiec
+  Prowadzący: Ojciec Chorzów
+  Występowanie: weekend
+  Opis: nieregularnie - sprawdź u źródła
+Dolna Bar:
+  url: https://www.facebook.com/dolnatarnowskiegory
+  Miasto: Tarnowskie Góry
+  Prowadzący: SASport
+  Cyklicznie:
+    Czw: "20:30"
+MSiW Tychy:
+  url: https://www.facebook.com/ministerstwo.tychy
+  Miasto: Tychy
+  Prowadzący: Ojciec Chrzestny
+  Cyklicznie:
+    Czw: "20:30"
+Rasta Pub:
+  url: https://www.facebook.com/rastapubtychy
+  Miasto: Tychy
+  Prowadzący: Passion Karaoke
+  Występowanie: weekend
+  Opis: nieregularnie - sprawdź u źródła
+Tawerna Pod Róża Wiatrów:
+  url: https://www.facebook.com/tawerna.podrozawiatrow
+  Miasto: Tychy
+  Występowanie: weekend
+  Opis: nieregularnie - sprawdź u źródła
+"300% Bar":
+  url: https://www.facebook.com/trzystaprocent
+  Miasto: Zabrze
+  Cyklicznie:
+    Pt: "20:00"
+Brama:
+  url: https://www.facebook.com/klub.brama
+  Miasto: Zabrze
+  Występowanie: weekend
+  Opis: nieregularnie - sprawdź u źródła
+Let’s Play Zabrze:
+  url: https://www.facebook.com/profile.php?id=61567494070827
+  Miasto: Zabrze
+  Prowadzący: SASport
+  Cyklicznie:
+    Pt: "20:00"
+Restogym:
+  url: https://www.facebook.com/profile.php?id=100075933920885
+  Miasto: Zabrze
+  Prowadzący: SASport
+  Występowanie: weekend
+  Opis: nieregularnie - sprawdź u źródła
+Smocze Oko:
+  url: https://www.facebook.com/Pubsmoczeoko
+  Miasto: Zabrze
+  Prowadzący: Tomek, Żółwik, Pajunk
+  Cyklicznie:
+    Pt: "21:00"
+    Sb: "21:00"
+The Legendarny Żywiec Pub:
+  url: https://www.facebook.com/zywiecpubrest/
+  Miasto: Żywiec
+  Cyklicznie:
+    Pt: "19:00"
