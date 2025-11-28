@@ -1,3 +1,11 @@
+Karaoke
+=======
+
+Data for https://karaoke.nowak.io/
+
+TODO
+====
+
  - [ ] alternating rows
  - [ ] better mobile version
  - [ ] finish data.yml
