@@ -6,6 +6,7 @@ Data for https://karaoke.nowak.io/
 TODO
 ====
 
+ - [ ] move from table to grid
  - [ ] mobile first
  - [ ] alternating rows
  - [ ] better mobile version
