@@ -211,3 +211,23 @@ Crazy Pub:
   Występowanie: sobota
   Opis: co 2 tygodnie - sprawdź u źródła
   Prowadzący: Piotrek
+Gryfna Lama:
+  url: https://www.facebook.com/GryfnaLama/
+  Miasto: Żory
+  Występowanie: piątek
+  Opis: co 2 tygodnie - sprawdź u źródła
+Lucky Saloon:
+  url: https://www.facebook.com/luckysaloon
+  Miasto: Częstochowa
+  Cyklicznie:
+    Pt: "21:00"
+CoctailBar:
+  url: https://www.facebook.com/profile.php?id=61568680902489
+  Miasto: Częstochowa
+  Występowanie: weekend
+  Opis: nieregularnie - sprawdź u źródła
+RED PUB:
+  url: https://www.facebook.com/profile.php?id=100057044276561
+  Miasto: Częstochowa
+  Cyklicznie:
+    Sb: "21:00"
