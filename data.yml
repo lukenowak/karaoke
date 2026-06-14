@@ -231,3 +231,32 @@ RED PUB:
   Miasto: Częstochowa
   Cyklicznie:
     Sb: "21:00"
+Kanion Pizza:
+  url: https://www.facebook.com/kanion.pizza.bedzin
+  Miasto: Będzin
+  Cyklicznie:
+    Śr: "19:00"
+  Prowadzący: Samba
+Tre Amici Beach Bar:
+  url: https://www.facebook.com/treamicibeachbar
+  Miasto: Będzin
+  Cyklicznie:
+    Pt: "18:00"
+  Prowadzący: DjDuDi
+Siedlisko Stawiki:
+  url: https://www.facebook.com/profile.php?id=100063669395418
+  Miasto: Sosnowiec
+  Prowadzący: Samba
+  Występowanie: weekend
+  Opis: nieregularnie - sprawdź u źródła
+Przystanek Tychy:
+  url: https://www.facebook.com/przystanek.tychy
+  Miasto: Tychy
+  Cyklicznie:
+    Czw: "20:00"
+  Prowadzący: Ojciec Chrzestny
+Piąty Dom:
+  url: https://www.facebook.com/5domkatowice
+  Miasto: Katowice
+  Występowanie: weekend
+  Opis: nieregularnie - sprawdź u źródła
