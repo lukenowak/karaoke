@@ -38,9 +38,9 @@ function createIrregularCell(venue) {
   cell.align = 'center';
 
   appendText(cell, venue.Występowanie ?? '');
+  cell.appendChild(document.createElement('br'));
 
   if (venue.Opis) {
-    cell.appendChild(document.createElement('br'));
     appendText(cell, venue.Opis);
   }
 

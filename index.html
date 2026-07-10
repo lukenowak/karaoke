@@ -1,51 +1,41 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Karaoke na Śląsku - tabelka</title>
+    <title>Karaoke na śląsku - tabelka</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <style>
-        .tableFixHead {
-            overflow: auto;
-            max-height: 80vh;
-        }
-
-        .tableFixHead thead th {
-            position: sticky;
-            top: 0;
-            z-index: 1;
-        }
+.tableFixHead          { overflow: auto; height: 100px; }
+.tableFixHead thead th { position: sticky; top: 0; z-index: 1; }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="tableFixHead">
-            <table class="table table-striped table-bordered table-sm table-hover">
-                <caption style="caption-side: top; text-align: center; font-weight: bold;">Lista karaoke na Śląsku</caption>
-                <thead>
-                    <tr>
-                        <th>Miasto</th>
-                        <th>Miejsce</th>
-                        <th>Prowadzący</th>
-                        <th>Pn</th>
-                        <th>Wt</th>
-                        <th>Śr</th>
-                        <th>Czw</th>
-                        <th>Pt</th>
-                        <th>Sb</th>
-                        <th>Nd</th>
-                    </tr>
-                </thead>
-                <tbody id="karaoke-rows">
-                    <tr>
-                        <td colspan="10" class="text-center">Ładowanie danych...</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <table class="table table-stripped table-bordered table-sm table-hover tableFixHead">
+            <caption style="caption-side: top; text-align: center; font-weight: bold;">Lista karaoke na Śląsku</caption>
+            <thead>
+                <tr>
+                    <th>Miasto</th>
+                    <th>Miejsce</th>
+                    <th>Prowadzący</th>
+                    <th>Pn</th>
+                    <th>Wt</th>
+                    <th>Śr</th>
+                    <th>Czw</th>
+                    <th>Pt</th>
+                    <th>Sb</th>
+                    <th>Nd</th>
+                </tr>
+            </thead>
+            <tbody id="karaoke-rows">
+                <tr>
+                    <td colspan="10" class="text-center">Ładowanie danych...</td>
+                </tr>
+            </tbody>
+        </table>
 
-        <p><a href="https://karaoke.nowak.io/">Karaoke na Śląsku - tabelka</a></p>
+        <p><a href="https://karaoke.nowak.io/">Karaoke on śląsku - tabelka</a></p>
         <p><a href="http://facebook.com/karaokenaslasku/">Komentowanie na FB</a></p>
         <p><a href="https://github.com/lukenowak/karaoke/">Kod</a></p>
     </div>
