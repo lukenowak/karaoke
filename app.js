@@ -1,6 +1,7 @@
 const DAYS = ['Pn', 'Wt', 'Śr', 'Czw', 'Pt', 'Sb', 'Nd'];
 
 const rows = document.querySelector('#karaoke-rows');
+const warningsContainer = document.querySelector('#data-warnings');
 
 function appendText(parent, text) {
   parent.appendChild(document.createTextNode(text ?? ''));
@@ -47,6 +48,84 @@ function createIrregularCell(venue) {
   return cell;
 }
 
+function isPlainObject(value) {
+  return Boolean(value) && typeof value === 'object' && !Array.isArray(value);
+}
+
+function toOptionalString(value) {
+  if (value === undefined || value === null) {
+    return undefined;
+  }
+
+  return String(value);
+}
+
+function sanitizeData(data) {
+  const sanitized = {};
+  const warnings = [];
+
+  if (!isPlainObject(data)) {
+    return {
+      data: sanitized,
+      warnings: ['data.yml musi zawierać mapę miejsc karaoke.'],
+    };
+  }
+
+  for (const [rawName, rawVenue] of Object.entries(data)) {
+    const name = String(rawName);
+
+    if (!isPlainObject(rawVenue)) {
+      warnings.push(`${name}: pominięto wpis, bo nie jest mapą danych.`);
+      continue;
+    }
+
+    const city = toOptionalString(rawVenue.Miasto)?.trim();
+    const url = toOptionalString(rawVenue.url)?.trim();
+
+    if (!city) {
+      warnings.push(`${name}: pominięto wpis bez pola "Miasto".`);
+      continue;
+    }
+
+    if (!url) {
+      warnings.push(`${name}: pominięto wpis bez pola "url".`);
+      continue;
+    }
+
+    const venue = {
+      Miasto: city,
+      url,
+      Prowadzący: toOptionalString(rawVenue.Prowadzący) ?? '???',
+    };
+
+    if ('Cyklicznie' in rawVenue) {
+      if (!isPlainObject(rawVenue.Cyklicznie)) {
+        warnings.push(`${name}: pole "Cyklicznie" nie jest mapą; użyto trybu nieregularnego.`);
+        venue.Występowanie = toOptionalString(rawVenue.Występowanie) ?? 'sprawdź u źródła';
+        venue.Opis = toOptionalString(rawVenue.Opis);
+      } else {
+        venue.Cyklicznie = {};
+
+        for (const [day, time] of Object.entries(rawVenue.Cyklicznie)) {
+          if (!DAYS.includes(day)) {
+            warnings.push(`${name}: pominięto nieznany dzień "${day}".`);
+            continue;
+          }
+
+          venue.Cyklicznie[day] = toOptionalString(time) ?? '';
+        }
+      }
+    } else {
+      venue.Występowanie = toOptionalString(rawVenue.Występowanie) ?? 'sprawdź u źródła';
+      venue.Opis = toOptionalString(rawVenue.Opis);
+    }
+
+    sanitized[name] = venue;
+  }
+
+  return { data: sanitized, warnings };
+}
+
 function sortVenues(data) {
   return Object.entries(data).sort(([nameA, venueA], [nameB, venueB]) => {
     const cityA = String(venueA.Miasto);
@@ -70,6 +149,35 @@ function sortVenues(data) {
 
     return 0;
   });
+}
+
+function renderWarnings(warnings) {
+  if (!warningsContainer) {
+    return;
+  }
+
+  warningsContainer.replaceChildren();
+
+  if (warnings.length === 0) {
+    warningsContainer.classList.add('d-none');
+    return;
+  }
+
+  const title = document.createElement('strong');
+  title.textContent = 'Problemy w data.yml:';
+  warningsContainer.appendChild(title);
+
+  const list = document.createElement('ul');
+  list.classList.add('mb-0');
+
+  for (const warning of warnings) {
+    const item = document.createElement('li');
+    item.textContent = warning;
+    list.appendChild(item);
+  }
+
+  warningsContainer.appendChild(list);
+  warningsContainer.classList.remove('d-none');
 }
 
 function renderVenues(data) {
@@ -122,5 +230,10 @@ async function loadKaraokeData() {
 }
 
 loadKaraokeData()
-  .then(renderVenues)
+  .then((rawData) => {
+    const { data, warnings } = sanitizeData(rawData);
+
+    renderWarnings(warnings);
+    renderVenues(data);
+  })
   .catch(renderError);

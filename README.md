@@ -21,6 +21,21 @@ Then open http://localhost:8000/.
 Opening `index.html` directly from the filesystem may not work because browsers
 restrict `fetch()` for local files.
 
+Validate data
+=============
+
+Install the validation dependency if needed:
+
+```
+python3 -m pip install -r requirements.txt
+```
+
+Then validate the source data:
+
+```
+python3 validate_data.py
+```
+
 TODO
 ====
 
