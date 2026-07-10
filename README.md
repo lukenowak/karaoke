@@ -39,15 +39,15 @@ python3 validate_data.py
 TODO
 ====
 
- - [ ] move from table to grid
  - [ ] mobile first
  - [ ] alternating rows
  - [ ] better mobile version
- - [ ] finish data.yml
+ - [ ] move from table to grid
+ - [ ] complete data coverage for the current target region
  - [ ] add updated date
  - [ ] make the table searchable
- - [ ] be WWW 66.6 and drop table for divs
- - [ ] data assertion
+ - [ ] replace the table with div/grid layout
+ - [x] data assertion
  - [ ] image printout
  - [x] stick header (computer)
  - [ ] stick header (mobile)
