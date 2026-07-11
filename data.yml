@@ -3,7 +3,7 @@ Pizzeria Latawiec:
   Miasto: Będzin
   Prowadzący: DjDuDi
   Występowanie: sobota
-  Opis: nieregularnie - sprawdź u źródła
+  Opis: nieregularnie
 Miasto:
   url: https://www.facebook.com/restauracjamiasto/
   Miasto: Bielsko-Biała
@@ -51,12 +51,12 @@ Before:
   Miasto: Jaworzno
   Prowadzący: Ojciec Chrzestny
   Występowanie: weekend w sezonie letnim
-  Opis: nieregularnie - sprawdź u źródła
+  Opis: nieregularnie
 MSiW Jastrzębie Zdrój:
   url: https://www.facebook.com/ministerstwo.jastrzebie/
   Miasto: Jastrzębie Zdrój
   Występowanie: weekend
-  Opis: nieregularnie - sprawdź u źródła
+  Opis: nieregularnie
 "Chicas & Gorillas":
   url: https://www.facebook.com/profile.php?id=61567181424072
   Miasto: Katowice
@@ -93,7 +93,7 @@ Pub Niebo Katowice:
   Miasto: Katowice
   Występowanie: weekend
   Prowadzący: Szwagier
-  Opis: nieregularnie - sprawdź u źródła
+  Opis: nieregularnie
 Taki Taki:
   url: https://www.facebook.com/takitakikatowice/
   Miasto: Katowice
@@ -106,7 +106,7 @@ Gwarek:
   url: https://www.facebook.com/restauracjagwarek2017
   Miasto: Knurów
   Występowanie: weekend
-  Opis: nieregularnie - sprawdź u źródła
+  Opis: nieregularnie
 PUB kobiórska dartownia:
   url: https://www.facebook.com/profile.php?id=61551348821776
   Miasto: Kobiór
@@ -137,13 +137,13 @@ Komin Music Cafe:
   url: https://www.facebook.com/kominmusiccafe
   Miasto: Sosnowiec
   Występowanie: weekend
-  Opis: nieregularnie - sprawdź u źródła
+  Opis: nieregularnie
 "Sjesta Restaurant & Cafe, Sosnowiec":
   url: https://www.facebook.com/SjestaRestaurantAndCafeSosnowiec
   Miasto: Sosnowiec
   Prowadzący: Ojciec Chorzów
   Występowanie: weekend
-  Opis: nieregularnie - sprawdź u źródła
+  Opis: nieregularnie
 Dolna Bar:
   url: https://www.facebook.com/dolnatarnowskiegory
   Miasto: Tarnowskie Góry
@@ -155,12 +155,12 @@ Rasta Pub:
   Miasto: Tychy
   Prowadzący: Passion Karaoke
   Występowanie: weekend
-  Opis: nieregularnie - sprawdź u źródła
+  Opis: nieregularnie
 Tawerna Pod Róża Wiatrów:
   url: https://www.facebook.com/tawerna.podrozawiatrow
   Miasto: Tychy
   Występowanie: weekend
-  Opis: nieregularnie - sprawdź u źródła
+  Opis: nieregularnie
 "300% Bar":
   url: https://www.facebook.com/trzystaprocent
   Miasto: Zabrze
@@ -170,7 +170,7 @@ Brama:
   url: https://www.facebook.com/klub.brama
   Miasto: Zabrze
   Występowanie: weekend
-  Opis: nieregularnie - sprawdź u źródła
+  Opis: nieregularnie
 Let’s Play Zabrze:
   url: https://www.facebook.com/profile.php?id=61567494070827
   Miasto: Zabrze
@@ -182,7 +182,7 @@ Restogym:
   Miasto: Zabrze
   Prowadzący: SASport
   Występowanie: weekend
-  Opis: nieregularnie - sprawdź u źródła
+  Opis: nieregularnie
 Smocze Oko:
   url: https://www.facebook.com/Pubsmoczeoko
   Miasto: Zabrze
@@ -199,19 +199,19 @@ Kolorova:
   url: https://www.facebook.com/kolorova.bytom/
   Miasto: Bytom
   Występowanie: weekend
-  Opis: co 2 tygodnie - sprawdź u źródła
+  Opis: co 2 tygodnie
   Prowadzący: M&M's Events
 Crazy Pub:
   url: https://www.facebook.com/profile.php?id=100044633065602
   Miasto: Bytom
   Występowanie: sobota
-  Opis: co 2 tygodnie - sprawdź u źródła
+  Opis: co 2 tygodnie
   Prowadzący: Piotrek
 Gryfna Lama:
   url: https://www.facebook.com/GryfnaLama/
   Miasto: Żory
   Występowanie: piątek
-  Opis: co 2 tygodnie - sprawdź u źródła
+  Opis: co 2 tygodnie
 Lucky Saloon:
   url: https://www.facebook.com/luckysaloon
   Miasto: Częstochowa
@@ -221,7 +221,7 @@ CoctailBar:
   url: https://www.facebook.com/profile.php?id=61568680902489
   Miasto: Częstochowa
   Występowanie: weekend
-  Opis: nieregularnie - sprawdź u źródła
+  Opis: nieregularnie
 RED PUB:
   url: https://www.facebook.com/profile.php?id=100057044276561
   Miasto: Częstochowa
@@ -244,7 +244,7 @@ Siedlisko Stawiki:
   Miasto: Sosnowiec
   Prowadzący: Samba
   Występowanie: weekend
-  Opis: nieregularnie - sprawdź u źródła
+  Opis: nieregularnie
 Przystanek Tychy:
   url: https://www.facebook.com/przystanek.tychy
   Miasto: Tychy
@@ -255,7 +255,7 @@ Piąty Dom:
   url: https://www.facebook.com/5domkatowice
   Miasto: Katowice
   Występowanie: weekend
-  Opis: nieregularnie - sprawdź u źródła
+  Opis: nieregularnie
 Underground Pub:
   url: https://www.facebook.com/UndergorundPub
   Miasto: Tychy
