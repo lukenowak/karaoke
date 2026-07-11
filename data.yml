@@ -4,11 +4,6 @@ Pizzeria Latawiec:
   Prowadzący: DjDuDi
   Występowanie: sobota
   Opis: nieregularnie
-Miasto:
-  url: https://www.facebook.com/restauracjamiasto/
-  Miasto: Bielsko-Biała
-  Cyklicznie:
-    Śr: "19:00"
 Pizzeria Zielona Dolina:
   url: https://www.facebook.com/ZielonaDolinaPizzeria/
   Miasto: Chorzów
@@ -34,7 +29,7 @@ Comitywa:
     Pt: "21:00"
     Sb: "21:00"
 MSiW Gliwice:
-  url: https://msiw.eu/lokal/gliwice/
+  url: https://www.facebook.com/ministerstwo.katowice
   Miasto: Gliwice
   Prowadzący: SASport
   Cyklicznie:
@@ -51,11 +46,6 @@ Before:
   Miasto: Jaworzno
   Prowadzący: Ojciec Chrzestny
   Występowanie: weekend w sezonie letnim
-  Opis: nieregularnie
-MSiW Jastrzębie Zdrój:
-  url: https://www.facebook.com/ministerstwo.jastrzebie/
-  Miasto: Jastrzębie Zdrój
-  Występowanie: weekend
   Opis: nieregularnie
 "Chicas & Gorillas":
   url: https://www.facebook.com/profile.php?id=61567181424072
@@ -102,11 +92,6 @@ Taki Taki:
     Czw: "21:00"
     Pt: "21:00"
     Sb: "21:00"
-Gwarek:
-  url: https://www.facebook.com/restauracjagwarek2017
-  Miasto: Knurów
-  Występowanie: weekend
-  Opis: nieregularnie
 PUB kobiórska dartownia:
   url: https://www.facebook.com/profile.php?id=61551348821776
   Miasto: Kobiór
@@ -117,31 +102,15 @@ Stacja Miejska Racibórz:
   Miasto: Racibórz
   Cyklicznie:
     Czw: "20:00"
-Ambasada Na Madagaskarze:
-  url: https://www.facebook.com/people/Ambasada-Na-Madagaskarze/100057309826117
-  Miasto: Ruda Śląska
-  Cyklicznie:
-    Pt: "21:00"
 Pizzeria EKIPLA:
   url: https://www.facebook.com/Ekiplarudaslaska/
   Miasto: Ruda Śląska
   Prowadzący: DJ Biggel
   Cyklicznie:
-    Sb: "20:00"
-MSiW Sosnowiec:
-  url: https://facebook.com/ministerstwo.sosnowiec/
-  Miasto: Sosnowiec
-  Prowadzący: DjDuDi, Samba
-  Występowanie: odwołane
+    Pt: "20:00"
 Komin Music Cafe:
   url: https://www.facebook.com/kominmusiccafe
   Miasto: Sosnowiec
-  Występowanie: weekend
-  Opis: nieregularnie
-"Sjesta Restaurant & Cafe, Sosnowiec":
-  url: https://www.facebook.com/SjestaRestaurantAndCafeSosnowiec
-  Miasto: Sosnowiec
-  Prowadzący: Ojciec Chorzów
   Występowanie: weekend
   Opis: nieregularnie
 Dolna Bar:
@@ -161,26 +130,9 @@ Tawerna Pod Róża Wiatrów:
   Miasto: Tychy
   Występowanie: weekend
   Opis: nieregularnie
-"300% Bar":
-  url: https://www.facebook.com/trzystaprocent
-  Miasto: Zabrze
-  Cyklicznie:
-    Pt: "20:00"
 Brama:
   url: https://www.facebook.com/klub.brama
   Miasto: Zabrze
-  Występowanie: weekend
-  Opis: nieregularnie
-Let’s Play Zabrze:
-  url: https://www.facebook.com/profile.php?id=61567494070827
-  Miasto: Zabrze
-  Prowadzący: SASport
-  Cyklicznie:
-    Pt: "20:00"
-Restogym:
-  url: https://www.facebook.com/profile.php?id=100075933920885
-  Miasto: Zabrze
-  Prowadzący: SASport
   Występowanie: weekend
   Opis: nieregularnie
 Smocze Oko:
@@ -201,12 +153,6 @@ Kolorova:
   Występowanie: weekend
   Opis: co 2 tygodnie
   Prowadzący: M&M's Events
-Crazy Pub:
-  url: https://www.facebook.com/profile.php?id=100044633065602
-  Miasto: Bytom
-  Występowanie: sobota
-  Opis: co 2 tygodnie
-  Prowadzący: Piotrek
 Gryfna Lama:
   url: https://www.facebook.com/GryfnaLama/
   Miasto: Żory
@@ -273,3 +219,9 @@ Amnesia Caffe Club:
   Miasto: Częstochowa
   Cyklicznie:
     Sb: "21:00"
+"Lola Montez Live Music & Sport Pub":
+  url: https://www.facebook.com/profile.php?id=61585042743978
+  Miasto: Gliwice
+  Cyklicznie:
+    Śr: "20:00"
+  Prowadzący: Passion Karaoke
