@@ -2,6 +2,7 @@ const DAYS = ['Pn', 'Wt', 'Śr', 'Czw', 'Pt', 'Sb', 'Nd'];
 
 const rows = document.querySelector('#karaoke-rows');
 const warningsContainer = document.querySelector('#data-warnings');
+const updatedContainer = document.querySelector('#last-updated');
 
 function appendText(parent, text) {
   parent.appendChild(document.createTextNode(text ?? ''));
@@ -218,6 +219,27 @@ function renderError(error) {
   rows.replaceChildren(row);
 }
 
+function renderUpdated(lastModified) {
+  if (!updatedContainer) {
+    return;
+  }
+
+  const date = lastModified ? new Date(lastModified) : null;
+
+  if (!date || Number.isNaN(date.getTime())) {
+    updatedContainer.textContent = '';
+    return;
+  }
+
+  const formatted = date.toLocaleDateString('pl-PL', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+
+  updatedContainer.textContent = `Zaktualizowano: ${formatted}`;
+}
+
 async function loadKaraokeData() {
   const response = await fetch('data.yml');
 
@@ -225,15 +247,17 @@ async function loadKaraokeData() {
     throw new Error(`Could not fetch data.yml: ${response.status} ${response.statusText}`);
   }
 
+  const lastModified = response.headers.get('Last-Modified');
   const yaml = await response.text();
-  return jsyaml.load(yaml);
+  return { data: jsyaml.load(yaml), lastModified };
 }
 
 loadKaraokeData()
-  .then((rawData) => {
+  .then(({ data: rawData, lastModified }) => {
     const { data, warnings } = sanitizeData(rawData);
 
     renderWarnings(warnings);
+    renderUpdated(lastModified);
     renderVenues(data);
   })
   .catch(renderError);

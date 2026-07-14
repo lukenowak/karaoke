@@ -44,7 +44,7 @@ TODO
  - [ ] better mobile version
  - [ ] move from table to grid
  - [ ] complete data coverage for the current target region
- - [ ] add updated date
+ - [x] add updated date
  - [ ] make the table searchable
  - [ ] replace the table with div/grid layout
  - [x] data assertion
