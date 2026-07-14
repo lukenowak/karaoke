@@ -1,0 +1,9 @@
+{
+  "name": "karaoke-image",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Generate shareable images (schedule poster + Facebook cover) from the karaoke page.",
+  "devDependencies": {
+    "playwright": "^1.61.1"
+  }
+}

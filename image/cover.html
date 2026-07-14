@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Karaoke na Śląsku — cover</title>
+<style>
+  html, body { margin: 0; padding: 0; }
+  .cover {
+    width: 820px; height: 312px; box-sizing: border-box;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center; text-align: center;
+    padding: 24px 40px;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(135deg, #3a0ca3 0%, #7209b7 45%, #f72585 100%);
+  }
+  .title    { font-size: 52px; font-weight: 800; margin: 0; text-shadow: 0 2px 8px rgba(0,0,0,.35); }
+  .subtitle { font-size: 20px; font-weight: 500; margin: 8px 0 0; opacity: .95; }
+  .stats    { font-size: 24px; font-weight: 700; margin: 16px 0 0; }
+  .foot     { font-size: 16px; margin: 16px 0 0; opacity: .9; }
+</style>
+</head>
+<body>
+<div class="cover" id="cover">
+  <h1 class="title">♪ Karaoke na Śląsku</h1>
+  <p class="subtitle">Aktualna lista karaoke — sprawdź, gdzie dziś zaśpiewasz</p>
+  <p class="stats" id="stats"></p>
+  <p class="foot"><b>fb.com/karaokenaslasku</b> · <span id="updated"></span></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+<script>
+(async () => {
+  const cover = document.querySelector('#cover');
+  try {
+    const res = await fetch('/data.yml');
+    const data = jsyaml.load(await res.text()) || {};
+    const venues = Object.values(data).filter((v) => v && typeof v === 'object');
+    const cities = new Set(venues.map((v) => v.Miasto).filter(Boolean));
+
+    document.querySelector('#stats').textContent =
+      `${venues.length} miejsc w ${cities.size} miastach`;
+
+    const lastModified = res.headers.get('Last-Modified');
+    if (lastModified) {
+      const date = new Date(lastModified);
+      if (!Number.isNaN(date.getTime())) {
+        document.querySelector('#updated').textContent =
+          'akt. ' + date.toLocaleDateString('pl-PL', { year: 'numeric', month: 'long', day: 'numeric' });
+      }
+    }
+  } catch (error) {
+    console.error(error);
+  } finally {
+    cover.classList.add('ready');
+  }
+})();
+</script>
+</body>
+</html>

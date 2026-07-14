@@ -36,6 +36,25 @@ Then validate the source data:
 python3 validate_data.py
 ```
 
+Generate images
+===============
+
+Render shareable images from the current page (needs Node.js; installs
+Playwright + Chromium on first run):
+
+```
+image/make.sh
+```
+
+This writes two files (git-ignored):
+
+ - `image/poster.png` — the full schedule, for posting.
+ - `image/cover.png` — a Facebook cover banner (1640x624) with the live venue
+   and city counts.
+
+Re-run it whenever `data.yml` changes. The `image/` folder is dev-only tooling
+and is excluded from deploys.
+
 TODO
 ====
 
@@ -45,6 +64,6 @@ TODO
  - [x] add updated date
  - [x] make the table searchable
  - [x] data assertion
- - [ ] image printout
+ - [x] image printout
  - [x] stick header (computer)
  - [x] stick header (mobile)
