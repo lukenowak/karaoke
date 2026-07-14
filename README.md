@@ -39,9 +39,9 @@ python3 validate_data.py
 TODO
 ====
 
- - [ ] mobile first
- - [ ] alternating rows
- - [ ] better mobile version
+ - [x] mobile first
+ - [x] alternating rows
+ - [x] better mobile version
  - [ ] move from table to grid
  - [ ] complete data coverage for the current target region
  - [x] add updated date
@@ -50,4 +50,4 @@ TODO
  - [x] data assertion
  - [ ] image printout
  - [x] stick header (computer)
- - [ ] stick header (mobile)
+ - [x] stick header (mobile)

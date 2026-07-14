@@ -36,6 +36,33 @@ function createVenueCell(name, venue) {
   return cell;
 }
 
+function createIdentityCell(name, venue) {
+  const cell = document.createElement('td');
+  cell.className = 'identity d-md-none';
+
+  const nameEl = document.createElement('div');
+  nameEl.className = 'i-name';
+
+  const link = document.createElement('a');
+  link.href = venue.url;
+  link.textContent = name;
+  nameEl.appendChild(link);
+  cell.appendChild(nameEl);
+
+  const meta = document.createElement('div');
+  meta.className = 'i-meta';
+  const parts = [venue.Miasto];
+
+  if (venue.Prowadzący) {
+    parts.push(venue.Prowadzący);
+  }
+
+  appendText(meta, parts.join(' · '));
+  cell.appendChild(meta);
+
+  return cell;
+}
+
 function createIrregularCell(venue) {
   const cell = document.createElement('td');
   cell.colSpan = DAYS.length;
@@ -212,11 +239,20 @@ function renderVenues(data, query = '') {
   for (const [name, venue] of entries) {
     const row = document.createElement('tr');
 
+    row.appendChild(createIdentityCell(name, venue));
+
     const cityCell = createCell(venue.Miasto);
     cityCell.setAttribute('scope', 'row');
+    cityCell.classList.add('venue', 'd-none', 'd-md-table-cell');
     row.appendChild(cityCell);
-    row.appendChild(createVenueCell(name, venue));
-    row.appendChild(createCell(venue.Prowadzący ?? '???'));
+
+    const venueCell = createVenueCell(name, venue);
+    venueCell.classList.add('venue', 'd-none', 'd-md-table-cell');
+    row.appendChild(venueCell);
+
+    const hostCell = createCell(venue.Prowadzący ?? '???');
+    hostCell.classList.add('venue', 'd-none', 'd-md-table-cell');
+    row.appendChild(hostCell);
 
     if (venue.Cyklicznie) {
       for (const day of DAYS) {
