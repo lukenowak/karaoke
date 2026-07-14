@@ -45,7 +45,7 @@ TODO
  - [ ] move from table to grid
  - [ ] complete data coverage for the current target region
  - [x] add updated date
- - [ ] make the table searchable
+ - [x] make the table searchable
  - [ ] replace the table with div/grid layout
  - [x] data assertion
  - [ ] image printout

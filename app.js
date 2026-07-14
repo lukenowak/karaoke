@@ -3,6 +3,8 @@ const DAYS = ['Pn', 'Wt', 'Śr', 'Czw', 'Pt', 'Sb', 'Nd'];
 const rows = document.querySelector('#karaoke-rows');
 const warningsContainer = document.querySelector('#data-warnings');
 const updatedContainer = document.querySelector('#last-updated');
+const searchInput = document.querySelector('#search');
+const noResults = document.querySelector('#no-results');
 
 function appendText(parent, text) {
   parent.appendChild(document.createTextNode(text ?? ''));
@@ -181,10 +183,33 @@ function renderWarnings(warnings) {
   warningsContainer.classList.remove('d-none');
 }
 
-function renderVenues(data) {
+function normalize(text) {
+  return String(text)
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '');
+}
+
+function matchesQuery(name, venue, query) {
+  if (!query) {
+    return true;
+  }
+
+  return [name, venue.Miasto, venue.Prowadzący]
+    .some((field) => field && normalize(field).includes(query));
+}
+
+function renderVenues(data, query = '') {
   rows.replaceChildren();
 
-  for (const [name, venue] of sortVenues(data)) {
+  const entries = sortVenues(data)
+    .filter(([name, venue]) => matchesQuery(name, venue, query));
+
+  if (noResults) {
+    noResults.classList.toggle('d-none', entries.length > 0);
+  }
+
+  for (const [name, venue] of entries) {
     const row = document.createElement('tr');
 
     const cityCell = createCell(venue.Miasto);
@@ -259,5 +284,11 @@ loadKaraokeData()
     renderWarnings(warnings);
     renderUpdated(lastModified);
     renderVenues(data);
+
+    if (searchInput) {
+      searchInput.addEventListener('input', () => {
+        renderVenues(data, normalize(searchInput.value.trim()));
+      });
+    }
   })
   .catch(renderError);
