@@ -228,6 +228,6 @@ Amnesia Caffe Club:
 "pub 300 zabrze":
   Miasto: Zabrze
   url: https://www.facebook.com/events/891024293445194/891024296778527
-  Występowanie: weekend
-  Opis: nieregularnie
+  Cyklicznie:
+    Sb: "17:00"
   Prowadzący: Pajunk
