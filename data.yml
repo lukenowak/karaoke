@@ -21,6 +21,7 @@ MSiW Częstochowa:
   Miasto: Częstochowa
   Cyklicznie:
     Czw: "20:00"
+  Prowadzący: Justyna, Mateusz
 Comitywa:
   url: https://www.facebook.com/p/Comityva-20-live-music-pub-D%C4%85browa-G%C3%B3rnicza-100063701464325/
   Miasto: Dąbrowa Górnicza
@@ -163,16 +164,19 @@ Lucky Saloon:
   Miasto: Częstochowa
   Cyklicznie:
     Pt: "21:00"
+  Prowadzący: Weronika
 CoctailBar:
   url: https://www.facebook.com/profile.php?id=61568680902489
   Miasto: Częstochowa
   Występowanie: weekend
   Opis: nieregularnie
+  Prowadzący: Beata, Dawid
 RED PUB:
   url: https://www.facebook.com/profile.php?id=100057044276561
   Miasto: Częstochowa
   Cyklicznie:
     Sb: "21:00"
+  Prowadzący: Weronika
 Kanion Pizza:
   url: https://www.facebook.com/kanion.pizza.bedzin
   Miasto: Będzin
@@ -218,7 +222,9 @@ Amnesia Caffe Club:
   url: https://www.facebook.com/Amnesia.Caffe.Club
   Miasto: Częstochowa
   Cyklicznie:
+    Pt: "21:00"
     Sb: "21:00"
+  Prowadzący: Sławomir, Dawid
 "Lola Montez Live Music & Sport Pub":
   url: https://www.facebook.com/profile.php?id=61585042743978
   Miasto: Gliwice
